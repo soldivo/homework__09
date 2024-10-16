@@ -16,6 +16,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+:root {
+  --main-color: #fff;
+  --secondary-color: #727272;
+  --additional-color: #34547a;
+  --font-weight: 500;
+  --line-height: 1.64rem;
+  --additional-font-weight: 400;
+  --text-align: center;
+}
+
 .container {
   width: 62%;
   margin: 0 auto;
@@ -25,7 +35,7 @@ body {
 h2,
 .about__text,
 .work-header {
-  text-align: center;
+  text-align: var(--text-align);
 }
 
 .hero__title,
@@ -33,7 +43,7 @@ h2,
 .project__number,
 .project__text,
 .footer__bg {
-  font-weight: 500;
+  font-weight: var(--font-weight);
 }
 
 .nav__link,
@@ -41,7 +51,7 @@ h2,
 .hero__btn,
 .about__text,
 .work-header__text {
-  line-height: 1.64rem;
+  line-height: var(--line-height);
 }
 
 .navbar__link:hover,
@@ -49,13 +59,13 @@ h2,
 .hero__btn,
 .project,
 .footer {
-  background-color: #34547a;
+  background-color: var(--additional-color);
 }
 
 .hero__text,
 .about__text,
 .work-header__text {
-  color: #727272;
+  color: var(--secondary-color);
 }
 
 .hero__btn,
@@ -63,13 +73,13 @@ h2,
 .project,
 .footer__bg,
 .footer__sm {
-  color: #fff;
+  color: var(--main-color);
 }
 
 .hero__text,
 .about__text,
 .work-header__text {
-  font-weight: 400;
+  font-weight: var(--additional-font-weight);
 }
 
 /* HEADER */
