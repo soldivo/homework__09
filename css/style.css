@@ -357,6 +357,12 @@ h2,
     display: none;
   }
 
+  .project-container {
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+  }
+
   .work-video iframe {
     min-height: 200px;
   }
@@ -402,6 +408,8 @@ h2,
 
 @media screen and (min-width: 1240px) {
   .project-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 30px;
     padding: 50px 0;
